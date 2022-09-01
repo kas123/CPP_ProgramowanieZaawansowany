@@ -1,14 +1,36 @@
 #include "MorseCodeTranslator.h"
+#include <iostream>
+#include <vector>
+#include <sstream>
 
-std::string MorseCodeTranslator::toMorseCode(char letter)
+std::string MorseCodeTranslator::toMorseCode(std::string text)
 {
-    auto it = latingToMorseAlphabet.find(letter); 
-    
-    return it->second;
+    for (int i = 0; i < text.size(); ++i)
+    {
+        auto it = latingToMorseAlphabet.find(text[i]);
+        std::cout << it->second << " ";
+        
+    }
+    return text; 
 }
 
-char MorseCodeTranslator::fromMorseCode(std::string morseSign)
+std::string MorseCodeTranslator::fromMorseCode(std::string text)
 {
-    auto it = morseToLatinAlphabet.find(morseSign);
-    return it->second;
+    std::istringstream input(text);
+    std::vector<std::string> separated;
+    std::string temp; 
+
+
+    while (std::getline(input, temp, ' ')) 
+    {
+
+        separated.push_back(temp);
+    }
+    
+    for (int i = 0; i < separated.size(); ++i)
+    {
+        auto it = morseToLatinAlphabet.find(separated.at(i));
+        std::cout << it->second << " ";
+    }
+    return text;
 }

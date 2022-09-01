@@ -11,9 +11,9 @@
 int main()
 {
     MorseCodeTranslator translator; 
-    std::cout << translator.toMorseCode('B');
+    translator.toMorseCode("PIESEK");
     std::cout << std::endl; 
-    std::cout << translator.fromMorseCode("-.-.");
+    translator.fromMorseCode("-.- --- - . -.-");
     
     
 }

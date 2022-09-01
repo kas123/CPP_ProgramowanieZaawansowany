@@ -5,8 +5,8 @@
 class MorseCodeTranslator
 {
 public:
-	std::string toMorseCode(char letter);// latwiejsza
-	char fromMorseCode(std::string morseSign);
+	std::string toMorseCode(std::string text);// latwiejsza
+	std::string fromMorseCode(std::string text);
 
 private:
 
