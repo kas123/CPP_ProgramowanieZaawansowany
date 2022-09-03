@@ -1,6 +1,14 @@
 ﻿  Rectangle.cpp
-C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Rectangle.cpp(43,1): error C2084: function 'RectangleManger::RectangleManger(int)' already has a body
-C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Rectangle.h(48): message : see previous definition of '{ctor}'
+C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Rectangle.cpp(76,30): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\algorithm(1402,1): error C2451: a conditional expression of type 'void' is not valid
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\algorithm(1402,18): message : Expressions of type void cannot be converted to other types
+C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Rectangle.cpp(77): message : see reference to function template instantiation '_OutIt std::copy_if<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::back_insert_iterator<std::vector<_Ty,std::allocator<_Ty>>>,RectangleManger::copyRectangles::<lambda_c9e28ed868fef632a077543d8b134cdf>>(_InIt,_InIt,_OutIt,_Pr)' being compiled
+          with
+          [
+              _OutIt=std::back_insert_iterator<std::vector<Rectangle,std::allocator<Rectangle>>>,
+              _Ty=Rectangle,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Rectangle>>>,
+              _Pr=RectangleManger::copyRectangles::<lambda_c9e28ed868fef632a077543d8b134cdf>
+          ]
   Zadanie8.cpp
-C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Zadanie8.cpp(10,24): warning C4930: 'RectangleGenerator rec(void)': prototyped function not called (was a variable definition intended?)
   Generating Code...

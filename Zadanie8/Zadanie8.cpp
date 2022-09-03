@@ -4,11 +4,15 @@
 #include <iostream>
 #include "Rectangle.h"
 
+
 int main()
 {
     std::cout << "Hello World!\n";
-    RectangleGenerator rec();
+    RectangleManger rec; 
+    rec.genereteMultipleRec(10, 100);
   
+    rec.printRectangle();
+    rec.countRectangleBiggerThen();
     
 }
 
