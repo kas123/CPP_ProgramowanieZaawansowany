@@ -1,0 +1,6 @@
+﻿  Rectangle.cpp
+C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Rectangle.cpp(43,1): error C2084: function 'RectangleManger::RectangleManger(int)' already has a body
+C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Rectangle.h(48): message : see previous definition of '{ctor}'
+  Zadanie8.cpp
+C:\Users\hello\source\SDA\CPP_ProgramowanieZaawansowany\Zadanie8\Zadanie8.cpp(10,24): warning C4930: 'RectangleGenerator rec(void)': prototyped function not called (was a variable definition intended?)
+  Generating Code...
